@@ -1,1 +1,1 @@
-Testing my user name for commit
+Testing user name for commit
