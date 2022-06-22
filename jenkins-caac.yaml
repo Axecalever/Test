@@ -1,0 +1,180 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - string:
+          id: "Jenkins-K8s-Token"
+          scope: GLOBAL
+          secret: "{AQAAABAAAAOQup8/kPra9A07VjprhTKL3ZyQxQIiZXZg996OFbafOra0atAoW1Hn2o9b0unFrB1o3fo6lz3td+X4k6576GRgczVifdlLoTfvikJ11i1jLCX2oUQQDmPUPVEf8eij9L7/dJEFTz0uQ4aZmSplx2tIpVbXLaOgKet6ncSW9ufRJfNhJV3d1DtenPdJVhfO5OXjRMhXzEW8R+eTXXOiaG/UX/JmpNawmg5EvXa4tlbyi57oX5WZ2RvUp37uhA1ToIxZd6C9q8Qg9zH21jbOPjAo9kTfjsEgayAak2gJMzuzsWwo7EdQwbOPOsEaU7ehyT1fhJhgGD70LJwBF6Z6QUqsU3ypuT2jt/ona3pFinZSFcCmG9eaf8/M6z62Az2uwEasCI5wUDbmpnJVPspmrqa+An2enY5v7rIiHEyda2JahqAugjgT+F3FGWVWWhGARCZPNDCqJf3FFp6TZ5rbYbHlSRU52HGXqdUvBNhEZ6O1td0janRltDsKxWpisne7nisKjGU0ViS3q6EqxXkAhmL+tKo4SqL22GZ7pNehDoEKiT0Zd2RJYwITRodcZlZG8uaASKuQE1kg7/gY1WzVXI+Hsyu92kmGkiKWpBfEXQGiNH7aH3XC7bfmRNz54lyhFaGODUrneP7Ju35PA++5JLch5cXb+2zTfIYZR8lTHjQZUxKm08Xfc8tUBv5X/pDpkUXu16GuuzPSpD1zGv3QGT9umHcB9ZwMi73MgjGbRZTVnXz9IOQtLKaY/ZAuj5HgHrMG9Cf7mayZbSwHQBaqYqmtD8WXVIuZ2kMJRiOTdrMVCMQtRNLK+RUO4KbcW/jBcgYtg/vB9mtcQqhyhas3z3XlF3Z0ryGo2PeqmJo/KQcLl28MbBa+CnLiRl6yakOqxPjbAM3KY7Y52lKflN0HbRqJnUipSHwC6VgpHDW6HLcvY361ENtvwPQ1M8jICW+wnI4s2U5x5D6pf7qsltb+bhZ1X8gSVmZ6JERiobCcTHhnvAptlJGo+opTTJPy6tNQjbWnJlxpfVq2kn1utfxmF3+GzDAbkNALuPNOZEgwoTO1tu2Q/e31ImP6rsKhuPGKLXAkTR4DxjBxWp4CKfCS1ued5ZVa9xbYC59OmHY3sMrDt9hoWaxMqAqsQ/LEOwYd7zZ9F872PYqny7KlwQZNlKhaNxvJxZXcko6Z8aB3x5wAqB2y5Z3yZN5yeMjezFRD2Wk7v9/1Nu1y8wRSnUTwXpq51w==}"
+jenkins:
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  labelAtoms:
+  - name: "built-in"
+  markupFormatter: "plainText"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  nodeProperties:
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+  numExecutors: 2
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "admin"
+        name: "admin"
+        properties:
+        - "apiToken"
+        - favoriting:
+            autofavoriteEnabled: true
+        - "mailer"
+        - "favorite"
+        - preferredProvider:
+            providerId: "default"
+      - id: "ahsan"
+        name: "Ahsan ud din"
+        properties:
+        - "apiToken"
+        - favoriting:
+            autofavoriteEnabled: true
+        - "favorite"
+        - "myView"
+        - preferredProvider:
+            providerId: "default"
+        - "timezone"
+        - mailer:
+            emailAddress: "auddin@nisum.com"
+  slaveAgentPort: 50000
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
+  views:
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+globalCredentialsConfiguration:
+  configuration:
+    providerFilter: "none"
+    typeFilter: "none"
+security:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  sSHD:
+    port: -1
+unclassified:
+  bitbucketEndpointConfiguration:
+    endpoints:
+    - bitbucketCloudEndpoint:
+        enableCache: false
+        manageHooks: false
+        repositoriesCacheDuration: 0
+        teamCacheDuration: 0
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  buildStepOperation:
+    enabled: false
+  email-ext:
+    adminRequiredForTemplateTesting: false
+    allowUnregisteredEnabled: false
+    charset: "UTF-8"
+    debugMode: false
+    defaultBody: |-
+      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+      Check console output at $BUILD_URL to view the results.
+    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    defaultTriggerIds:
+    - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+    - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+    maxAttachmentSize: -1
+    maxAttachmentSizeMb: -1
+    precedenceBulk: false
+    watchingEnabled: false
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  gitHubPluginConfig:
+    hookUrl: "http://localhost:8080/github-webhook/"
+  gitSCM:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: false
+    useExistingAccountWithSameEmail: false
+  globalTimeOutConfiguration:
+    operations:
+    - "abortOperation"
+  junitTestResultStorage:
+    storage: "file"
+  location:
+    adminAddress: "address not configured yet <nobody@nowhere>"
+    url: "http://localhost:8080/"
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+    useTls: false
+  pollSCM:
+    pollingThreadCount: 10
+  timestamper:
+    allPipelines: false
+    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
+    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
